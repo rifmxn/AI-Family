@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family A&I | Halaman Utama</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<script>
+function flipCard(card) {
+    card.classList.toggle('flipped');
+}
+
+// Optional: Auto-close other cards when one is opened
+function flipCard(card) {
+    // Close all other cards
+    const allCards = document.querySelectorAll('.card');
+    allCards.forEach(otherCard => {
+        if (otherCard !== card && otherCard.classList.contains('flipped')) {
+            otherCard.classList.remove('flipped');
+        }
+    });
+    
+    // Toggle current card
+    card.classList.toggle('flipped');
+}
+
+// Optional: Close card when clicking outside
+document.addEventListener('click', function(event) {
+    if (!event.target.closest('.card')) {
+        const allCards = document.querySelectorAll('.card');
+        allCards.forEach(card => {
+            card.classList.remove('flipped');
+        });
+    }
+});
+</script>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">🍰 Family A&I</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="product.html">Produk</a></li>
+      <li><a href="promotion.html">Operasi</a></li>
+      <li><a href="kesimpulan.html">Kesimpulan</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <h1>Selamat Datang ke Family A&I</h1>
+      <p>Air Mojito, Kek Batik, Cheesekut & Sate Ikan — citarasa segar dari hati kami 💚</p>
+      <a href="product.html" class="btn">Lihat Produk Kami</a>
+    </div>
+  </section>
+
+  <!-- RINGKASAN EKSEKUTIF -->
+  <section class="intro">
+    <h2>Ringkasan Eksekutif</h2>
+    <p>Family A&I ialah perniagaan perkongsian yang ditubuhkan pada <strong>4 Ogos 2025</strong> di Politeknik Besut, Terengganu. Kami menawarkan produk seperti Air Mojito, Kek Batik, Cheesekut dan Sate Ikan yang dihasilkan menggunakan bahan-bahan segar dan berkualiti tinggi.</p>
+    <p>Pasaran kami tertumpu kepada pelajar, pensyarah dan masyarakat tempatan. Kami aktif mempromosikan produk melalui bazar dan media sosial seperti Instagram untuk membina hubungan yang baik dengan pelanggan.</p>
+  </section>
+
+  <!-- LATAR BELAKANG PERNIAGAAN -->
+  <section class="business-background">
+    <div class="business-header">
+      <h1>LATAR BELAKANG PERNIAGAAN</h1>
+      <div class="subtitle">Family A&I</div>
+    </div>
+    
+    <div class="business-content">
+      <h2 class="section-title">2.0 LATAR BELAKANG PERNIAGAAN</h2>
+      
+      <div class="info-grid">
+        <div class="info-item">
+          <div class="info-label">2.1 Nama Perniagaan:</div>
+          <div class="info-value">Family A&I</div>
+        </div>
+        
+        <div class="info-item">
+          <div class="info-label">2.2 Alamat Perniagaan:</div>
+          <div class="info-value">Politeknik Besut, 22200 Besut, Terengganu</div>
+        </div>
+        
+        <div class="info-item">
+          <div class="info-label">2.3 Alamat Surat Menyurat:</div>
+          <div class="info-value">Politeknik Besut, 22200 Besut, Terengganu</div>
+        </div>
+        
+        <div class="info-item">
+          <div class="info-label">2.4 Emel:</div>
+          <div class="info-value">FamilyA&I@gmail.com</div>
+        </div>
+        
+        <div class="info-item">
+          <div class="info-label">2.5 Instagram Perniagaan:</div>
+          <div class="info-value">@FamilyA&I</div>
+        </div>
+        
+        <div class="info-item">
+          <div class="info-label">2.6 No. Telefon untuk Close Sale (WhatsApp/Telegram):</div>
+          <div class="info-value">010-936 0956</div>
+        </div>
+        
+        <div class="info-item">
+          <div class="info-label">2.7 No. Telefon Pejabat:</div>
+          <div class="info-value">016-932 5347</div>
+        </div>
+        
+        <div class="info-item">
+          <div class="info-label">2.8 No. Fax:</div>
+          <div class="info-value">-</div>
+        </div>
+        
+        <div class="info-item">
+          <div class="info-label">2.9 Bentuk Perniagaan:</div>
+          <div class="info-value">Perkongsian</div>
+        </div>
+        
+        <div class="info-item">
+          <div class="info-label">2.10 Kegiatan Utama Perniagaan:</div>
+          <div class="info-value">Menjual Air Mojito, Kek Batik, Cheesekut dan Sate Ikan</div>
+        </div>
+        
+        <div class="info-item">
+          <div class="info-label">2.11 Tarikh Memulakan Perniagaan:</div>
+          <div class="info-value">4 Ogos 2025</div>
+        </div>
+        
+        <div class="info-item">
+          <div class="info-label">2.12 Modal Permulaan Perniagaan:</div>
+          <div class="info-value">RM200</div>
+        </div>
+        
+        <div class="info-item">
+          <div class="info-label">2.13 Nama dan Alamat Pemegang Saham / Ahli Kongsi:</div>
+          <div class="info-value">
+            <div class="shareholders">
+              <div class="shareholder-item">
+                <div class="shareholder-name">1. MUHAMMAD NAZRIL IMMAN BIN ZAID</div>
+                <div class="shareholder-address">Alamat: Kg Rasau Tanah Merah Kuala Kangsar 33010 Perak Darul Ridzuan</div>
+              </div>
+              
+              <div class="shareholder-item">
+                <div class="shareholder-name">2. MUHAMMAD ILYAS UMAR BIN ZAMRI</div>
+                <div class="shareholder-address">Alamat: PT1668, KP PERDANA, KUBANG PARIT, 20050 Kuala Terengganu, Terengganu</div>
+              </div>
+              
+              <div class="shareholder-item">
+                <div class="shareholder-name">3. MOHAMAD AIDIL ADAM BIN ASZAIRUN</div>
+                <div class="shareholder-address">Alamat: A80, Kampung Tunku Putra, Kilang Lama, 09000 Kulim, Kedah</div>
+              </div>
+              
+              <div class="shareholder-item">
+                <div class="shareholder-name">4. ARMAN</div>
+                <div class="shareholder-address">Alamat: Kampung Raja, Besut, Terengganu</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="info-item">
+          <div class="info-label">2.14 Maklumat Kewangan:</div>
+          <div class="info-value">
+            <div class="financial-info">
+              <div class="financial-item">
+                <div class="financial-name">Nama Bank:</div>
+                <div class="financial-details">MAYBANK</div>
+              </div>
+              
+              <div class="financial-item">
+                <div class="financial-name">Jenis Akaun:</div>
+                <div class="financial-details">Akaun Perkongsian</div>
+              </div>
+              
+              <div class="financial-item">
+                <div class="financial-name">No. Akaun:</div>
+                <div class="financial-details">5582 0272 0802</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="business-footer">
+      Dokumen Perniagaan - Family A&I
+    </div>
+  </section>
+
+  <!-- VISI & MISI -->
+  <section class="mission">
+    <h2>Visi & Misi</h2>
+    <div class="vision">
+      <h3>🎯 Visi</h3>
+      <p>Menjadi perniagaan unggul dalam penghasilan minuman dan pencuci mulut berkualiti tinggi serta dikenali di seluruh Malaysia.</p>
+    </div>
+    <div class="misi">
+      <h3>💡 Misi</h3>
+      <p>Menyediakan minuman dan pencuci mulut yang memenuhi citarasa pelanggan dengan menekankan kebersihan, kesegaran dan layanan mesra.</p>
+    </div>
+  </section>
+
+  <!-- AHLI KUMPULAN -->
+<section class="team">
+    <h2>Ahli Kumpulan</h2>
+    <div class="team-container">
+        <!-- IMMAN -->
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="imman.jpg" alt="Imman">
+                    <div class="card-content">
+                        <h3>Imman</h3>
+                        <p><strong>Jawatan:</strong> Pengurus</p>
+                        <p><strong>Kemahiran:</strong> Pandai berkomunikasi</p>
+                        <div class="click-hint">👆 Klik untuk lihat tanggungjawab</div>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <div class="back-content">
+                        <h3>📋 TANGGUNGJAWAB PENGURUS</h3>
+                        <ul class="responsibility-list">
+                            <li>Menyelia dan memastikan perjalanan perniagaan berjalan dengan lancar</li>
+                            <li>Menjadi ketua dalam membuat keputusan dan perancangan strategi perniagaan</li>
+                            <li>Memantau semua aspek jualan, pengeluaran dan pengurusan kewangan</li>
+                        </ul>
+                        <div class="profile-info">
+                            <p><strong>No. KP:</strong> 061207-08-0757</p>
+                            <p><strong>Tarikh Lahir:</strong> 7 Disember 2006</p>
+                            <p><strong>Umur:</strong> 19 tahun</p>
+                            <p><strong>No. Telefon:</strong> 016-2458 223</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ILYAS -->
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="ilyas.jpg" alt="Ilyas">
+                    <div class="card-content">
+                        <h3>Ilyas</h3>
+                        <p><strong>Jawatan:</strong> Eksekutif Pemasaran</p>
+                        <p><strong>Kemahiran:</strong> Mengambil gambar</p>
+                        <div class="click-hint">👆 Klik untuk lihat tanggungjawab</div>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <div class="back-content">
+                        <h3>📊 TANGGUNGJAWAB PEMASARAN</h3>
+                        <ul class="responsibility-list">
+                            <li>Merancang dan melaksanakan promosi produk melalui media sosial seperti Instagram</li>
+                            <li>Merekod maklum balas pelanggan untuk penambahbaikan produk</li>
+                            <li>Mengurus kandungan kreatif untuk platform digital</li>
+                        </ul>
+                        <div class="profile-info">
+                            <p><strong>No. KP:</strong> 060902-11-0669</p>
+                            <p><strong>Tarikh Lahir:</strong> 2 September 2006</p>
+                            <p><strong>Umur:</strong> 19 tahun</p>
+                            <p><strong>No. Telefon:</strong> 010-936 0956</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AIDIL -->
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="aidil.jpg" alt="Aidil">
+                    <div class="card-content">
+                        <h3>Aidil</h3>
+                        <p><strong>Jawatan:</strong> Eksekutif Operasi</p>
+                        <p><strong>Kemahiran:</strong> Memasak & marketing</p>
+                        <div class="click-hint">👆 Klik untuk lihat tanggungjawab</div>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <div class="back-content">
+                        <h3>🏭 TANGGUNGJAWAB OPERASI</h3>
+                        <ul class="responsibility-list">
+                            <li>Mengurus persediaan bahan mentah dan proses pembuatan produk</li>
+                            <li>Menjaga kualiti, kebersihan dan keselamatan makanan semasa pengeluaran</li>
+                            <li>Memastikan stok bahan mencukupi untuk setiap hari jualan</li>
+                        </ul>
+                        <div class="profile-info">
+                            <p><strong>No. KP:</strong> 061025-02-0569</p>
+                            <p><strong>Tarikh Lahir:</strong> 25 Oktober 2006</p>
+                            <p><strong>Umur:</strong> 19 tahun</p>
+                            <p><strong>No. Telefon:</strong> 013-500 6353</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ARMAN -->
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="arman.jpg" alt="Arman">
+                    <div class="card-content">
+                        <h3>Arman</h3>
+                        <p><strong>Jawatan:</strong> Eksekutif Kewangan</p>
+                        <p><strong>Kemahiran:</strong> Editor & reka bentuk</p>
+                        <div class="click-hint">👆 Klik untuk lihat tanggungjawab</div>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <div class="back-content">
+                        <h3>💰 TANGGUNGJAWAB KEWANGAN</h3>
+                        <ul class="responsibility-list">
+                            <li>Mengawal aliran keluar masuk tunai semasa jualan</li>
+                            <li>Menyediakan laporan keuntungan dan belanjawan harian bazar</li>
+                            <li>Memastikan setiap transaksi direkod dengan tepat dan telus</li>
+                        </ul>
+                        <div class="profile-info">
+                            <p><strong>No. KP:</strong> 060226140239</p>
+                            <p><strong>Tarikh Lahir:</strong> 26 Februari 2006</p>
+                            <p><strong>Umur:</strong> 19 tahun</p>
+                            <p><strong>No. Telefon:</strong> 01117820836</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <footer>
+    <p>| © 2025 Family A&I |</p>
+  </footer>
+</body>
+</html>
